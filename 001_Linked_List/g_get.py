@@ -67,7 +67,7 @@ class LinkedList:
         temp = self.head
         for _ in range(index):
             temp = temp.next
-        return temp.value
+        return temp
 
 
 my_linked_list = LinkedList(4)
@@ -89,6 +89,6 @@ my_linked_list.pop_first()
 my_linked_list.print_list()
 print(f"Length : {my_linked_list.length}")
 print()
-print(my_linked_list.get(0))
-print(my_linked_list.get(4))
+print(my_linked_list.get(0).value)
+print(my_linked_list.get(4).value)
 print()
